@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Knowbel Reader: a PDF and EPUB reader for studying</title>
+  <meta name="description" content="Knowbel Reader opens PDFs, EPUBs and web articles, explains any passage you select, and cites the pages every answer comes from.">
+  <meta name="color-scheme" content="light dark">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://knowbel.github.io/">
+  <meta property="og:title" content="Knowbel Reader">
+  <meta property="og:description" content="A PDF and EPUB reader for textbooks and papers, with AI help that cites the page.">
+  <meta property="og:image" content="https://knowbel.github.io/images/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;0,7..72,700;1,7..72,400&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="./">Knowbel</a>
+      <nav aria-label="Main">
+        <a href="#features">Features</a>
+        <a href="#get-started">Get started</a>
+        <a href="https://github.com/knowbel/knowbel-reader">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <p class="eyebrow">Knowbel Reader</p>
+        <h1>A reader for the books you study</h1>
+        <p class="lede">
+          Open a textbook, a paper or a saved article, select the passage that
+          lost you, and ask about it. The explanation draws on the rest of the
+          book, and every claim cites the page it came from.
+        </p>
+        <div class="actions">
+          <a class="button primary" href="https://github.com/knowbel/knowbel-reader">View on GitHub</a>
+          <a class="button" href="#get-started">How to run it</a>
+        </div>
+        <p class="meta">PDF, EPUB and web pages · Runs in the browser or as a macOS app · Bring your own API key</p>
+      </div>
+      <figure class="shot hero-shot">
+        <img src="images/deep-dive.webp" width="2000" height="1250"
+             alt="Knowbel Reader with a page of Calculus Made Easy on the left. A highlighted sentence about reading dx has been sent to Deep Dive, and the panel on the right explains it, with page citations after each claim.">
+        <figcaption>
+          <strong>Deep Dive.</strong> Select a sentence, an equation or a region
+          of a page. The answer uses the surrounding text and related passages
+          elsewhere in the book. Ask a follow-up, or dive into a phrase in the
+          answer to go a level deeper.
+        </figcaption>
+      </figure>
+    </section>
+
+    <section id="features" class="features">
+      <div class="wrap">
+        <article class="feature">
+          <div class="feature-text">
+            <h2>Answers you can check</h2>
+            <p>
+              Press <kbd>⌘J</kbd> to ask about the whole document, one chapter
+              or a page range. Only the relevant passages go to the model, and
+              each claim in the reply carries a page chip.
+            </p>
+            <p>
+              Hover a chip to read the exact passage it rests on, or click it
+              to jump there in the PDF. Anything the model adds from outside
+              the document is labelled, so you know what to verify.
+            </p>
+          </div>
+          <figure class="shot">
+            <img src="images/citations.webp" width="1200" height="998" loading="lazy"
+                 alt="The Ask panel answering why second-order small quantities can be ignored. The pointer rests on a p. 5 citation chip, and a preview shows the quoted passage from page 5.">
+          </figure>
+        </article>
+
+        <article class="feature flip">
+          <div class="feature-text">
+            <h2>A glossary for this book</h2>
+            <p>
+              Look up a term and get its meaning as <em>this</em> document uses
+              it, where it is defined and every place it appears, with a
+              dictionary or Wikipedia entry alongside.
+            </p>
+            <p>
+              Cross-references work too: “Eq. (3.2)”, “Theorem 4.1” and “[12]”
+              link to their targets and preview them exactly as printed.
+            </p>
+          </div>
+          <figure class="shot">
+            <img src="images/glossary.webp" width="1200" height="806" loading="lazy"
+                 alt="A glossary card for the term differentials, giving the book's own definition, noting it is defined on page 5, and counting 105 references.">
+          </figure>
+        </article>
+
+        <article class="feature">
+          <div class="feature-text">
+            <h2>Everything you read, in one library</h2>
+            <p>
+              Add PDFs and EPUBs, or paste a link to save a blog post, an
+              article or a documentation page. An arXiv link fetches the
+              paper itself.
+            </p>
+            <p>
+              EPUBs and web pages are typeset into PDFs when you add them, with
+              their pictures, links and contents intact, so highlighting and the
+              study tools work the same on all of them.
+            </p>
+          </div>
+          <figure class="shot">
+            <img src="images/library.webp" width="2000" height="903" loading="lazy"
+                 alt="The library, showing covers for On the Origin of Species, Flatland, Relativity and Calculus Made Easy, with a Continue reading row above.">
+          </figure>
+        </article>
+      </div>
+    </section>
+
+    <section class="reading">
+      <div class="wrap">
+        <h2>And a proper reader underneath</h2>
+        <p class="section-lede">The AI tools are optional. Without an API key, reading, highlighting and notes all still work.</p>
+        <ul class="grid">
+          <li><h3>Highlights and notes</h3><p>Five colors, underline or strikethrough, with comments. Area highlights and sticky notes for figures and margins.</p></li>
+          <li><h3>Navigation</h3><p>Table of contents, full-text search, printed page labels like “xii”, and Back / Forward over every jump.</p></li>
+          <li><h3>Comfortable reading</h3><p>Zoom, two-page view, continuous scrolling, and light and dark themes.</p></li>
+          <li><h3>Take your work with you</h3><p>Export an annotated copy of the PDF, or back up all your notes as a single file.</p></li>
+          <li><h3>Your choice of model</h3><p>Use Muse Spark, Claude, OpenAI or Gemini, and pick a different one for each tool if you like.</p></li>
+          <li><h3>Your files stay local</h3><p>The desktop app keeps your library as plain files in a folder. The browser version keeps it in the browser.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="get-started" class="start">
+      <div class="wrap narrow">
+        <h2>Get started</h2>
+        <p>You need <a href="https://nodejs.org">Node.js</a> 22.18 or newer and an API key for at least one supported provider.</p>
+<pre><code>git clone https://github.com/knowbel/knowbel-reader.git
+cd knowbel-reader
+npm install
+cp .env.example .env    <span class="c"># add your API key</span>
+npm run dev</code></pre>
+        <p>
+          Then open the address Vite prints, usually
+          <code>http://localhost:5173</code>. For the desktop app, install the
+          <a href="https://www.rust-lang.org/tools/install">Rust toolchain</a> and run
+          <code>npm run tauri dev</code>. It has been tested on macOS so far.
+        </p>
+        <p>
+          The <a href="https://github.com/knowbel/knowbel-reader#readme">README</a>
+          covers providers, per-tool model settings and building the desktop app.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <p><a href="https://github.com/knowbel">Knowbel</a> · <a href="https://github.com/knowbel/knowbel-reader">knowbel-reader on GitHub</a></p>
+      <p class="credit">Screenshots show <em>Calculus Made Easy</em> by Silvanus P. Thompson and other public-domain books from Project Gutenberg.</p>
+    </div>
+  </footer>
+</body>
+</html>
