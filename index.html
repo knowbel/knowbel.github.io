@@ -3,13 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Knowbel Reader: a PDF and EPUB reader for studying</title>
-  <meta name="description" content="Knowbel Reader opens PDFs, EPUBs and web articles, explains any passage you select, and cites the pages every answer comes from.">
+  <title>Open-Source AI PDF &amp; EPUB Reader for Studying | Knowbel</title>
+  <meta name="description" content="Knowbel Reader opens PDFs, EPUBs and web articles, explains any passage you select with AI, and cites the pages every answer comes from.">
   <meta name="color-scheme" content="light dark">
+  <link rel="canonical" href="https://knowbel.github.io/">
 
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://knowbel.github.io/">
-  <meta property="og:title" content="Knowbel Reader">
+  <meta property="og:title" content="Knowbel Reader: open-source AI PDF &amp; EPUB reader for studying">
   <meta property="og:description" content="A PDF and EPUB reader for textbooks and papers, with AI help that cites the page.">
   <meta property="og:image" content="https://knowbel.github.io/images/og.jpg">
   <meta property="og:image:width" content="1200">
@@ -22,6 +23,23 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;0,7..72,700;1,7..72,400&display=swap">
   <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Knowbel Reader",
+    "url": "https://knowbel.github.io/",
+    "description": "An open-source PDF and EPUB reader for studying. Select a passage to have AI explain it, chat with the whole document, and check every answer against the pages it cites.",
+    "applicationCategory": "EducationalApplication",
+    "operatingSystem": "macOS, Web browser",
+    "isAccessibleForFree": true,
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "image": "https://knowbel.github.io/images/og.jpg",
+    "screenshot": "https://knowbel.github.io/images/deep-dive.webp",
+    "sameAs": ["https://github.com/knowbel/knowbel-reader"]
+  }
+  </script>
 </head>
 <body>
   <header class="site-header">
@@ -39,7 +57,7 @@
     <section class="hero">
       <div class="wrap">
         <p class="eyebrow">Knowbel Reader</p>
-        <h1>A reader for the books you study</h1>
+        <h1>A PDF and EPUB reader for the books you study</h1>
         <p class="lede">
           Open a textbook, a paper or a saved article, select the passage that
           lost you, and ask about it. The explanation draws on the rest of the
@@ -49,7 +67,7 @@
           <a class="button primary" href="https://github.com/knowbel/knowbel-reader">View on GitHub</a>
           <a class="button" href="#get-started">How to run it</a>
         </div>
-        <p class="meta">PDF, EPUB and web pages · Runs in the browser or as a macOS app · Bring your own API key</p>
+        <p class="meta">PDF, EPUB and web pages · Runs in the browser or as a macOS app · Bring your own API key · Open source</p>
       </div>
       <figure class="shot hero-shot">
         <img src="images/deep-dive.webp" width="2000" height="1250"
@@ -69,7 +87,7 @@
           <div class="feature-text">
             <h2>Answers you can check</h2>
             <p>
-              Press <kbd>⌘J</kbd> to ask about the whole document, one chapter
+              Press <kbd>⌘J</kbd> to chat with the whole PDF, one chapter
               or a page range. Only the relevant passages go to the model, and
               each claim in the reply carries a page chip.
             </p>
@@ -131,7 +149,7 @@
         <h2>And a proper reader underneath</h2>
         <p class="section-lede">The AI tools are optional. Without an API key, reading, highlighting and notes all still work.</p>
         <ul class="grid">
-          <li><h3>Highlights and notes</h3><p>Five colors, underline or strikethrough, with comments. Area highlights and sticky notes for figures and margins.</p></li>
+          <li><h3>Highlights and notes</h3><p>Annotate PDFs in five colors, with underline, strikethrough and comments. Area highlights and sticky notes for figures and margins.</p></li>
           <li><h3>Navigation</h3><p>Table of contents, full-text search, printed page labels like “xii”, and Back / Forward over every jump.</p></li>
           <li><h3>Comfortable reading</h3><p>Zoom, two-page view, continuous scrolling, and light and dark themes.</p></li>
           <li><h3>Take your work with you</h3><p>Export an annotated copy of the PDF, or back up all your notes as a single file.</p></li>
